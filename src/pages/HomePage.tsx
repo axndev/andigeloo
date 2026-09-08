@@ -60,8 +60,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
     <div className="min-h-screen bg-stone-900 text-stone-100 font-sans selection:bg-amber-500 selection:text-stone-950">
       {/* 1. HERO SECTION */}
       <section className="relative bg-gradient-to-b from-stone-950 via-stone-900 to-stone-950 border-b border-stone-800 overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
-        {/* Subtle architectural grid pattern background */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#d97706_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
+        {/* Subtle royal navy gradient accent */}
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#caa462_1px,transparent_1px)] [background-size:32px_32px] pointer-events-none" />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -102,20 +102,28 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
                 </div>
               </div>
 
-              {/* Action Buttons */}
+              {/* Action Buttons styled in blue and gold as in reference pic */}
               <div className="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                 <button
-                  onClick={onOpenConsultation}
-                  className="w-full sm:w-auto bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-500 text-stone-950 font-bold px-8 py-4 rounded-md text-base shadow-xl shadow-amber-950/50 hover:shadow-amber-500/25 transition-all font-sans text-center flex items-center justify-center gap-2 group"
-                  id="hero-primary-cta"
+                  onClick={() => onNavigate('practice-areas')}
+                  className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-8 py-3.5 rounded-sm text-base shadow-lg transition-all font-sans text-center flex items-center justify-center gap-2 group cursor-pointer"
+                  id="hero-practice-areas-cta"
                 >
-                  <span>Schedule a Confidential Consultation</span>
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span>Practice Areas</span>
+                  <span className="font-bold text-lg group-hover:translate-x-1 transition-transform">→</span>
+                </button>
+
+                <button
+                  onClick={onOpenConsultation}
+                  className="w-full sm:w-auto border border-amber-500/50 hover:border-amber-400 bg-stone-950/60 hover:bg-stone-900 text-amber-300 font-semibold px-7 py-3.5 rounded-sm text-base transition-all flex items-center justify-center gap-2 shadow-md cursor-pointer"
+                  id="hero-consultation-cta"
+                >
+                  <span>Schedule Consultation</span>
                 </button>
 
                 <a
                   href={`tel:${FIRM_DETAILS.phoneRaw}`}
-                  className="w-full sm:w-auto border border-stone-700 hover:border-amber-400/80 bg-stone-900/80 hover:bg-stone-800 text-white font-semibold px-7 py-4 rounded-md text-base transition-all flex items-center justify-center gap-2.5"
+                  className="w-full sm:w-auto border border-stone-700 hover:border-amber-400/80 bg-stone-900/80 hover:bg-stone-800 text-stone-200 font-medium px-6 py-3.5 rounded-sm text-base transition-all flex items-center justify-center gap-2.5"
                   id="hero-phone-cta"
                 >
                   <Phone className="w-4 h-4 text-amber-400" />
@@ -749,7 +757,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onOpenConsultati
             <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
               <button
                 onClick={onOpenConsultation}
-                className="w-full sm:w-auto bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-500 text-stone-950 font-bold px-8 py-4 rounded-md text-base shadow-xl transition-all"
+                className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-8 py-4 rounded-sm text-base shadow-xl transition-all cursor-pointer"
                 id="final-cta-btn"
               >
                 Schedule Free Consultation

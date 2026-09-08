@@ -243,10 +243,10 @@ export const Header: React.FC<HeaderProps> = ({
 
             <button
               onClick={onOpenConsultation}
-              className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-500 text-stone-950 font-bold px-5 py-2.5 rounded-md text-sm shadow-lg hover:shadow-amber-500/20 transition-all active:scale-95 tracking-wide"
+              className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-5 py-2.5 rounded-sm text-sm shadow-md transition-all active:scale-95 tracking-normal cursor-pointer"
               id="header-consultation-btn"
             >
-              Schedule a Consultation
+              Schedule Consultation
             </button>
           </div>
 

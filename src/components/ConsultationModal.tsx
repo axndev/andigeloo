@@ -245,7 +245,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full sm:w-auto bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-500 text-stone-950 font-bold px-7 py-3 rounded-md text-sm shadow-lg shadow-amber-950/40 hover:shadow-amber-500/20 transition-all font-sans active:scale-95 disabled:opacity-50"
+                  className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-semibold px-7 py-3 rounded-sm text-sm shadow-md transition-all font-sans active:scale-95 disabled:opacity-50 cursor-pointer"
                   id="submit-consultation-btn"
                 >
                   {isSubmitting ? 'Transmitting Request...' : 'Submit Confidential Case Request'}

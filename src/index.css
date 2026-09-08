@@ -1,5 +1,46 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy-950: #091220;
+  --color-navy-900: #101e36;
+  --color-navy-850: #132440;
+  --color-navy-800: #172c4e;
+  --color-navy-750: #1c355c;
+  --color-navy-700: #223f6d;
+  --color-navy-600: #2c5087;
+
+  --color-gold-200: #eedec0;
+  --color-gold-300: #e2cb99;
+  --color-gold-400: #d6ba7c;
+  --color-gold-500: #caa462;
+  --color-gold-600: #b89148;
+  --color-gold-700: #977434;
+
+  /* Map stone palette to deep navy tones as in the user's reference picture */
+  --color-stone-950: #091220;
+  --color-stone-900: #101e36;
+  --color-stone-850: #132440;
+  --color-stone-800: #182d4d;
+  --color-stone-700: #223c65;
+  --color-stone-600: #355383;
+  --color-stone-500: #6b85af;
+  --color-stone-400: #9ab0d1;
+  --color-stone-300: #c6d4ea;
+  --color-stone-200: #e3ebf7;
+  --color-stone-100: #f1f5fb;
+  --color-stone-50: #f8fafd;
+
+  /* Map amber palette to warm legal gold as shown on the button in the picture */
+  --color-amber-300: #e2cb99;
+  --color-amber-400: #d6ba7c;
+  --color-amber-500: #caa462;
+  --color-amber-600: #b89148;
+  --color-amber-700: #977434;
+  --color-amber-800: #7a5c27;
+  --color-amber-900: #584119;
+  --color-amber-950: #38280d;
+}
+
 @layer base {
   :root {
     --font-serif: 'Cormorant Garamond', Georgia, serif;
@@ -9,8 +50,8 @@
 
   body {
     font-family: var(--font-sans);
-    color: #1c1917;
-    background-color: #fafaf9;
+    color: #f1f5fb;
+    background-color: #101e36;
   }
 
   h1, h2, h3, .font-display {
@@ -29,6 +70,7 @@ html {
 }
 
 ::selection {
-  background-color: #d97706;
-  color: #ffffff;
+  background-color: #caa462;
+  color: #101e36;
 }
+

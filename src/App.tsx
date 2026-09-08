@@ -164,7 +164,7 @@ export default function App() {
       <div className="md:hidden fixed bottom-5 right-5 z-40">
         <a
           href={`tel:${FIRM_DETAILS.phoneRaw}`}
-          className="flex items-center gap-2 bg-gradient-to-r from-amber-600 to-amber-500 text-stone-950 font-bold px-4 py-3 rounded-full shadow-2xl border border-amber-300 active:scale-95 transition-transform"
+          className="flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-4 py-3 rounded-full shadow-2xl border border-amber-300 active:scale-95 transition-transform"
           aria-label="Call Fairfax Attorney Now"
           id="mobile-floating-call"
         >
